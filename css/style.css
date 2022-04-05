@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+}
+
+.topcabecalho {
+  background-color: #222222;
+  display: none;
+  color: white;
+}
+.cabecalho {
+  background-color: rgb(140, 206, 206);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 40%;
+}
+.menu-mobile {
+  width: 50px;
+  height: 60px;
+}
+
+.menu-desktp {
+  display: none;
+}
+
+.banner{
+    width: 100%;
+    background-image: url(../img/painel_2.jpg);
+    background-repeat: no-repeat;
+    height: 320px;
+    position: relative;
+}
+
+
+.conteudo-banner{
+    text-align: center;
+    padding: 140px;
+}
+.conteudo-banner h1{
+    padding: 10px 25px;
+    background-color: white;
+    border-radius:5px ;
+    width: 250px;
+    margin: 0 auto;
+}
+.curiosidades{
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+h2{
+  color: #666666;
+}
+.cards-curiosidades{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 25px;
+}
+.card{
+  width: 100%;
+  background-color: rgb(213, 246, 246) ;
+  border-radius: 13px;
+}
+.card img{
+  width: 100%;
+  height: 200px;
+  border-radius: 13px;
+}
+.text{
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.video, .link{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+.rodape{
+  display: flex;
+  background-color: #222222;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 1280px) {
+  .topcabecalho {
+    display: block;
+  }
+  .menu-mobile {
+    display: none;
+  }
+  .menu-desktp {
+    min-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  }
+  .cards-curiosidades{
+    flex-direction: row;
+    gap: 50px;
+  }
+  .rodape{
+    flex-direction: row;
+  }
+}
